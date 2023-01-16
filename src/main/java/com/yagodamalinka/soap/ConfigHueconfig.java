@@ -17,7 +17,7 @@ public class ConfigHueconfig {
     @Bean
     public ContinentRepository continentRepository(Jaxb2Marshaller marshaller) {
         ContinentRepository client = new ContinentRepository();
-        client.setDefaultUri("http://www.oorsprong.org/websamples.countryinfo");
+        client.setDefaultUri("http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         return client;

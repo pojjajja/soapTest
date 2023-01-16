@@ -23,7 +23,7 @@ public class ContinentRepository extends WebServiceGatewaySupport {
         log.info(String.format("Ищем страну по ISO коду говна - " + isoCode));
 
         CountryNameResponse response = (CountryNameResponse) getWebServiceTemplate()
-                .marshalSendAndReceive(URL, request);
+                .marshalSendAndReceive(request);
 
         System.out.println(response);
 
